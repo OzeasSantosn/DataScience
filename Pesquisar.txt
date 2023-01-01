@@ -1,0 +1,85 @@
+procurar 
+***** Series Temporais:
+Machine Learning -> XGBoost Regressor,
+Estatistica -> Arima 
+o que são series estacionárias (p-valor testará se eh estacionaria ou nao. acima de 0.5)?????
+
+Forecasting - Modelos "avançados"
+
+Redes neurais recursivas (ja nasceram temporais)
+	-> LSTM - Long short-term memory
+	-> GRU - Gated recurrent memory
+TCN: -> CNN (Mas pra séries temporais (Kernels identificam 'caracteristicas' no tempo)
+
+
+
+
+
+
+O ARIMA (AutoRegressive Integrated Moving Average) é um modelo estatístico que é usado para prever séries temporais. Ele é baseado em três componentes: autorregressão, integração e média móvel. Ele é usado principalmente para previsões de séries temporais univariadas, ou seja, para prever o valor de uma variável em um determinado período de tempo com base em seus valores anteriores.
+O XGBoost, por outro lado, é um algoritmo de aprendizado de máquina que é amplamente utilizado em problemas de classificação e regressão. Ele é conhecido por ser muito eficiente e ter um bom desempenho em muitos conjuntos de dados. Ele é baseado em árvores de decisão e utiliza uma técnica chamada gradient boosting para aprimorar seu desempenho.
+Em resumo, o ARIMA é principalmente usado para previsões de séries temporais univariadas, enquanto o XGBoost é usado para problemas de classificação e regressão. No entanto, cada modelo pode ser adequado para um determinado conjunto de dados, portanto, é importante avaliar qual modelo é mais apropriado para o problema em questão.
+
+
+Estacionária:
+Uma série temporal é considerada estacionária se seus parâmetros estatísticos (como média e variância) não mudam ao longo do tempo. Em outras palavras, uma série temporal é estacionária se não houver tendência ou sazonalidade significativas nos dados.
+
+Existem algumas propriedades comuns de uma série temporal estacionária, incluindo:
+
+Média constante: a média dos valores ao longo do tempo não muda.
+Variância constante: a variância dos valores ao longo do tempo não muda.
+Autocovariância constante: a autocovariância dos valores ao longo do tempo não muda.
+Um modelo de série temporal estacionária é geralmente mais fácil de modelar do que um modelo de série temporal não estacionária, pois os parâmetros estatísticos não mudam ao longo do tempo. Alguns exemplos de séries temporais estacionárias incluem o número de acidentes de trânsito em uma determinada área em um período de tempo específico e o número de casos de gripe em uma região durante um período de tempo específico.
+
+
+Conhecimentos basicos Ciencia de Dados Jr.
+
+Aqui estão algumas habilidades e conhecimentos importantes que um cientista de dados junior deve ter:
+Conhecimentos básicos de programação: é importante ter familiaridade com pelo menos uma linguagem de programação para trabalhar com dados. Algumas das linguagens mais populares para ciência de dados são Python e R.
+Conhecimento de estatística: os cientistas de dados precisam ter uma compreensão sólida de estatística para poder trabalhar com conjuntos de dados. Isso inclui conhecimento de testes de hipótese, regressão e análise de variância.
+Conhecimento de ferramentas de visualização de dados: os cientistas de dados precisam ser capazes de visualizar e apresentar seus dados de maneira clara e concisa. Ferramentas populares para visualização de dados incluem o Tableau e o Power BI.
+Conhecimento de sistemas de gerenciamento de banco de dados: os cientistas de dados precisam saber como acessar e trabalhar com dados em bancos de dados. Alguns dos sistemas de gerenciamento de banco de dados mais populares são o MySQL e o PostgreSQL.
+Habilidades de comunicação: os cientistas de dados precisam ser capazes de explicar suas descobertas e recomendações de maneira clara e concisa, tanto para o público técnico quanto para o público leigo.
+Habilidades de aprendizado contínuo: os cientistas de dados precisam estar sempre aprendendo e se atualizando em relação às últimas tendências e técnicas em ciência de dados. Isso inclui participar de cursos online, ler artigos técnicos e participar de conferências.
+
+
+dados desbalanceados:
+
+Quando um conjunto de dados é desbalanceado, significa que uma das classes é muito mais representativa do que as outras. Isso pode afetar negativamente o desempenho de alguns modelos de aprendizado de máquina, pois eles podem ter dificuldade em generalizar para as classes menos representativas.
+
+Aqui estão algumas abordagens comuns para tratar dados desbalanceados:
+
+Amostragem balanceada: uma opção é coletar mais dados para as classes menos representativas para tornar o conjunto de dados mais balanceado. No entanto, isso nem sempre é possível ou viável.
+
+Amostragem sobremensionada: outra opção é sobremensionar as classes menos representativas, ou seja, duplicar ou triplicar os exemplos dessas classes. Isso pode ajudar a equilibrar o conjunto de dados e melhorar o desempenho do modelo.
+
+Amostragem subdimensionada: uma opção é subdimensionar a classe mais representativa, ou seja, remover alguns exemplos dessa classe. Isso também pode ajudar a equilibrar o conjunto de dados e melhorar o desempenho do modelo.
+
+Utilizar métricas de avaliação apropriadas: é importante utilizar métricas de avaliação que levem em consideração o desbalanceamento do conjunto de dados. Por exemplo, a acurácia não é uma boa métrica para conjuntos de dados desbalanceados, pois ela pode ser enganosa. Em vez disso, é melhor usar métricas como a precisão, revocação e F1-score.
+
+Utilizar algoritmos de aprendizado de máquina que são resistentes ao desbalanceamento: alguns algoritmos de aprendizado de máquina, como o XGBoost, são mais resistentes ao desbalanceamento do que outros. É importante avaliar qual algoritmo é mais adequado para o problema em questão.
+
+------------------
+
+Os dados desbalanceados são aqueles em que uma das classes é muito maior que a outra. Por exemplo, em um conjunto de dados de diagnóstico médico, pode haver muito mais casos de pacientes sem uma doença do que casos de pacientes com a doença. Isso pode criar desafios para os modelos de machine learning, pois eles podem ser muito bons em prever a classe majoritária, mas não tão bons em prever a classe minoritária.
+
+Existem algumas abordagens comuns para lidar com dados desbalanceados, incluindo:
+
+Coletar mais exemplos da classe minoritária: Isso pode ajudar a equilibrar o conjunto de dados e a torná-lo mais equilibrado. No entanto, isso pode ser difícil de fazer se a classe minoritária é rara ou difícil de coletar.
+
+Usar métricas de avaliação especializadas: Algumas métricas de avaliação, como a matriz de confusão e o F1-score, são mais adequadas para avaliar modelos em conjuntos de dados desbalanceados.
+
+Usar técnicas de remuestreo: Algumas técnicas de remuestreo, como o sobremuestreo da classe minoritária e o submuestreo da classe majoritária, podem ser usadas para criar conjuntos de treinamento mais equilibrados.
+
+Usar penalizações de erro diferenciadas: Alguns algoritmos de machine learning permitem que você defina penaliza
+
+
+Aqui está o resto da descrição das abordagens para lidar com dados desbalanceados:
+
+Usar penalizações de erro diferenciadas: Alguns algoritmos de machine learning permitem que você defina penalizações diferentes para erros em cada classe. Isso pode incentivar o modelo a ser mais preciso na classe minoritária.
+
+Usar modelos especializados: Alguns modelos, como árvores de decisão balanceadas e modelos de classificação de cost-sensitive, foram projetados especificamente para lidar com conjuntos de dados desbalanceados.
+
+Usar técnicas de combinação de modelos: Algumas técnicas, como o ensamble, envolvem a criação de vários modelos e a combinação de suas previsões para obter uma previsão final. Isso pode ajudar a melhorar a precisão em conjuntos de dados desbalanceados.
+
+Em geral, não há uma abordagem única para lidar com dados desbalanceados, e a melhor opção depende do conjunto de dados específico e do objetivo do modelo. É importante experimentar várias abordagens e avaliar qual é a mais adequada para o seu caso de uso.
